@@ -5,6 +5,7 @@ import About from './pages/About';
 import PlanPage from './pages/PlanPage';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
+import Tag from './components/shared/Tag';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path='/Plan' component={PlanPage} />
         </Switch>
         <Footer />
+        <Tag />
       </Router>
     </>
   );
