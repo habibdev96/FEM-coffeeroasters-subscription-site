@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 import { SubHeading } from '../styledElements/Headings.styled';
 import Step from './Step';
+import Button from '../styledElements/Buttons.styled';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
@@ -9,7 +10,7 @@ const Container = styled.div`
   ${sectionSpacingMd}
 
   .steps {
-    margin-top: 10rem;
+    margin: 10rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: flex-start;
@@ -29,6 +30,9 @@ const Steps = () => {
             <Step key={step.id} {...step} />
           ))}
         </div>
+        <Button to='/Plan' primary={+true}>
+          Create your plan
+        </Button>
       </Container>
     </section>
   );

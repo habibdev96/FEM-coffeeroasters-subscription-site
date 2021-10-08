@@ -7,6 +7,8 @@ import featureIconOne from './assets/home/desktop/icon-coffee-bean.svg';
 import featureIconTwo from './assets/home/desktop/icon-gift.svg';
 import featureIconThree from './assets/home/desktop/icon-truck.svg';
 
+import { FaFacebookSquare, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 export const linksData = [
   {
     id: 1,
@@ -101,5 +103,26 @@ export const stepsData = [
     title: 'Receive and enjoy!',
     description:
       'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.',
+  },
+];
+
+export const socialsData = [
+  {
+    id: 1,
+    social: 'Facebook',
+    icon: <FaFacebookSquare />,
+    path: '#!',
+  },
+  {
+    id: 2,
+    social: 'Twitter',
+    icon: <FaTwitter />,
+    path: '#!',
+  },
+  {
+    id: 3,
+    social: 'Instagram',
+    icon: <FaInstagram />,
+    path: '#!',
   },
 ];

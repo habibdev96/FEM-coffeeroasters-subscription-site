@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { textStyles } from '../../abstracts/Mixins';
 
@@ -14,6 +14,15 @@ const StyledLink = styled(Link)`
   &:focus {
     color: var(--darkGrayBlue);
   }
+
+  ${({ footer }) =>
+    footer &&
+    css`
+      &:hover,
+      &:focus {
+        color: var(--lightCream);
+      }
+    `}
 `;
 
 export default StyledLink;
