@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { sectionSpacingLg, maxWidthLg } from '../../abstracts/Mixins';
+import { sectionSpacingMd, maxWidthLg } from '../../abstracts/Mixins';
 import { GradientHeading } from '../styledElements/Headings.styled';
 import Collection from './Collection';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
-  ${sectionSpacingLg}
+  ${sectionSpacingMd}
   ${maxWidthLg}
   text-align: center;
 

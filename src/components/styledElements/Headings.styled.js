@@ -7,6 +7,13 @@ export const HeroHeading = styled.h1`
   color: var(--lightCream);
 `;
 
+export const SectionHeading = styled.h2`
+  ${headingStyles}
+  font-size: 4rem;
+  color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
+  color: ${({ light }) => light && 'var(--lightCream)'};
+`;
+
 export const GradientHeading = styled.h2`
   ${headingStyles}
   font-size: 15rem;
@@ -19,5 +26,6 @@ export const GradientHeading = styled.h2`
 export const SubHeading = styled.h3`
   ${headingStyles}
   font-size: 2.4rem;
-  ${({ dark }) => dark && 'var(--darkGrayBlue)'}
+  color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
+  color: ${({ light }) => light && 'var(--lightCream)'};
 `;

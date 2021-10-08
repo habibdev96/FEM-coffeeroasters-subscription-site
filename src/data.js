@@ -3,6 +3,10 @@ import collectionTwo from './assets/home/desktop/image-planalto.png';
 import collectionThree from './assets/home/desktop/image-piccollo.png';
 import collectionFour from './assets/home/desktop/image-danche.png';
 
+import featureIconOne from './assets/home/desktop/icon-coffee-bean.svg';
+import featureIconTwo from './assets/home/desktop/icon-gift.svg';
+import featureIconThree from './assets/home/desktop/icon-truck.svg';
+
 export const linksData = [
   {
     id: 1,
@@ -49,5 +53,29 @@ export const collectionsData = [
     title: 'Danche',
     description:
       'Ethiopian hand-harvested blend densely packed with vibrant fruit notes',
+  },
+];
+
+export const featuresData = [
+  {
+    id: 1,
+    icon: featureIconOne,
+    title: 'Best quality',
+    description:
+      'Discover an endless variety of the world’s best artisan coffee from each of our roasters.',
+  },
+  {
+    id: 2,
+    icon: featureIconTwo,
+    title: 'Exclusive benefits',
+    description:
+      'Special offers and swag when you subscribe, including 30% off your first shipment.',
+  },
+  {
+    id: 3,
+    icon: featureIconThree,
+    title: 'Free shipping',
+    description:
+      'We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.',
   },
 ];

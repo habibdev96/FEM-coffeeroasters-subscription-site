@@ -5,7 +5,7 @@ import { textStyles } from '../../abstracts/Mixins';
 const StyledLink = styled(Link)`
   ${textStyles}
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--gray);
   transition: var(--mainTransition);
