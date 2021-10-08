@@ -27,5 +27,12 @@ export const SubHeading = styled.h3`
   ${headingStyles}
   font-size: 2.4rem;
   color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
+  color: ${({ gray }) => gray && 'var(--gray)'};
   color: ${({ light }) => light && 'var(--lightCream)'};
+`;
+
+export const CardHeading = styled.h4`
+  ${headingStyles}
+  font-size: 3.2rem;
+  color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
 `;
