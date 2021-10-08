@@ -20,20 +20,6 @@ const flexBetween = css`
   gap: var(--gap);
 `;
 
-const twoCol = css`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: var(--gap);
-`;
-
-const threeCol = css`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: var(--gap);
-`;
-
 const headingStyles = css`
   font-family: 'Fraunces', serif;
   font-weight: 900;
@@ -79,8 +65,6 @@ export {
   flexCenter,
   flexAlign,
   flexBetween,
-  twoCol,
-  threeCol,
   headingStyles,
   textStyles,
   sectionSpacingSm,

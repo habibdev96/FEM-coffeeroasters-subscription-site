@@ -6,3 +6,18 @@ export const HeroHeading = styled.h1`
   font-size: 7.2rem;
   color: var(--lightCream);
 `;
+
+export const GradientHeading = styled.h2`
+  ${headingStyles}
+  font-size: 15rem;
+  background: -webkit-linear-gradient(var(--gray), var(--white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+export const SubHeading = styled.h3`
+  ${headingStyles}
+  font-size: 2.4rem;
+  ${({ dark }) => dark && 'var(--darkGrayBlue)'}
+`;

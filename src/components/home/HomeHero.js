@@ -2,12 +2,17 @@ import styled from 'styled-components';
 import { HeroHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import Button from '../styledElements/Buttons.styled';
-import { maxWidthLg, twoCol } from '../../abstracts/Mixins';
+import { maxWidthLg } from '../../abstracts/Mixins';
 import bg from '../../assets/home/desktop/image-hero-coffeepress.jpg';
+
+const StyledHeader = styled.header`
+  margin: 0 2rem;
+`;
 
 const Container = styled.div`
   ${maxWidthLg}
-  ${twoCol}
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 10rem;
   background: url(${bg}) center center/cover no-repeat;
   border-radius: var(--mainRadius);
@@ -15,7 +20,7 @@ const Container = styled.div`
 
 const HomeHero = () => {
   return (
-    <header>
+    <StyledHeader>
       <Container>
         <div>
           <HeroHeading>Great coffee made simple.</HeroHeading>
@@ -29,7 +34,7 @@ const HomeHero = () => {
           </Button>
         </div>
       </Container>
-    </header>
+    </StyledHeader>
   );
 };
 
