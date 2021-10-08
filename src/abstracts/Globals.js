@@ -5,13 +5,14 @@ const Globals = createGlobalStyle`
     /* colors */
     --white: hsl(0, 0%, 100%);
     --darkCyan: hsl(179, 81%, 29%);
+    --lightCyan: hsl(178, 55%, 61%);
     --darkGrayBlue: hsl(215, 19%, 25%);
     --paleOrange: hsl(25, 94%, 86%);
     --lightCream: hsl(147, 60%, 97%);
     --gray: hsl(215, 5%, 54%); 
     
     /* radius */
-    --mainRadius: 5rem;
+    --mainRadius: 1rem;
 
     /* grid gap */
     --gap: 5rem; 
