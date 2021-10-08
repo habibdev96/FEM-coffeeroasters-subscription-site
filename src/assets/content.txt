@@ -1,0 +1,223 @@
+=== === === home === === ===
+  Home
+  About us
+  Create your plan
+
+  Great coffee made simple.
+
+  Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+  coffees from our best roasters delivered directly to your door, at your schedule.
+
+  Create your plan
+
+  Our collection
+
+  Gran Espresso
+  Light and flavorful blend with cocoa and black pepper for an intense experience
+
+  Planalto
+  Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
+
+  Piccollo
+  Mild and smooth blend featuring notes of toasted almond and dried cherry
+
+  Danche
+  Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+
+  Why choose us?
+
+  A large part of our role is choosing which particular coffees will be featured 
+  in our range. This means working closely with the best coffee growers to give 
+  you a more impactful experience on every level.
+
+  Best quality
+  Discover an endless variety of the world’s best artisan coffee from each of our roasters.
+
+  Exclusive benefits
+  Special offers and swag when you subscribe, including 30% off your first shipment.
+
+  Free shipping 
+  We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+
+  How it works
+
+  01
+  Pick your coffee
+  Select from our evolving range of artisan coffees. Our beans are ethically 
+  sourced and we pay fair prices for them. There are new coffees in all profiles 
+  every month for you to try out.
+
+  02
+  Choose the frequency
+  Customize your order frequency, quantity, even your roast style and grind type. 
+  Pause, skip or cancel your subscription with no commitment through our online portal.
+
+  03
+  Receive and enjoy!
+  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+  world-class coffees curated to provide a distinct tasting experience.
+
+  Create your plan
+
+  Home
+  About us
+  Create your plan
+
+=== === === about === === ===
+  Home
+  About us
+  Create your plan
+
+  About us
+  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of 
+  coffee from around the world. We have since been dedicated to bring the perfect cup - from 
+  bean to brew - in every shipment.
+  
+  Our commitment
+  We’re built on a simple mission and a commitment to doing good along the way. We want to 
+  make it easy for you to discover and brew the world’s best coffee at home. It all starts 
+  at the source. To locate the specific lots we want to purchase, we travel nearly 60 days 
+  a year trying to understand the challenges and opportunities in each of these places.
+  We collaborate with exceptional coffee growers and empower a global community of farmers 
+  through with well above fair-trade benchmarks. We also offer training, support farm community 
+  initiatives, and invest in coffee plant science. Curating only the finest blends, we roast 
+  each lot to highlight tasting profiles distinctive to their native growing region.
+  
+  Uncompromising quality
+  Although we work with growers who pay close attention to all stages of harvest and processing, 
+  we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the 
+  coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
+  consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+
+  Our headquarters
+
+  United Kingdom
+  68 Asfordby Rd
+  Alcaston
+  SY6 1YA
+  +44 1241 918425
+
+  Canada
+  1528 Eglinton Avenue
+  Toronto
+  Ontario M4P 1A6
+  +1 416 485 2997
+
+  Australia
+  36 Swanston Street
+  Kewell
+  Victoria
+  +61 4 9928 3629
+
+  Home
+  About us
+  Create your plan
+
+=== === === plan === === ===
+  Home
+  About us
+  Create your plan
+
+  Create a plan
+  Build a subscription plan that best fits your needs. We offer an assortment of the best 
+  artisan coffees from around the globe delivered fresh to your door.
+
+  01
+  Pick your coffee
+  Select from our evolving range of artisan coffees. Our beans are ethically
+  sourced and we pay fair prices for them. There's new coffees in all profiles
+  every month for you to try out.
+  
+  02
+  Choose the frequency
+  Customize your order frequency, quantity, even your roast style and grind type.
+  Pause, skip or cancel your subscription with no commitment through our online portal.
+  
+  03
+  Receive and enjoy!
+  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+  world-class coffees curated to provide a distinct tasting experience.
+
+  01 Preferences
+  02 Bean type
+  03 Quantity
+  04 Grind option
+  05 Deliveries
+
+  How do you drink your coffee?
+
+  Capsule
+  Compatible with Nespresso systems and similar brewers
+
+  Filter
+  For pour over or drip methods like Aeropress, Chemex, and V60
+
+  Espresso
+  Dense and finely ground beans for an intense, flavorful experience
+
+  What type of coffee?
+
+  Single origin
+  Distinct, high quality coffee from a specific family-owned farm
+
+  Decaf
+  Just like regular coffee, except the caffeine has been removed
+
+  Blended
+  Combination of two or three dark roasted beans of organic coffees
+
+  How much would you like?
+  250g
+  Perfect for the solo drinker. Yields about 12 delicious cups.
+  
+  500g
+  Perfect option for a couple. Yields about 40 delectable cups.
+
+  1000g
+  Perfect for offices and events. Yields about 90 delightful cups.
+
+  Want us to grind them?
+
+  Wholebean
+  Best choice if you cherish the full sensory experience
+
+  Filter
+  For drip or pour-over coffee methods such as V60 or Aeropress
+
+  Cafetiére
+  Course ground beans specially suited for french press coffee
+
+  How often should we deliver?
+
+  Every week
+  $14.00 per shipment. Includes free first-class shipping.
+
+  Every 2 weeks
+  $17.25 per shipment. Includes free priority shipping.
+
+  Every month
+  $22.50 per shipment. Includes free priority shipping.
+
+  Order Summary
+  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
+  sent to me _____.”
+
+  Create my plan!
+
+  <!-- Modal -->
+  Order Summary
+
+  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+  sent to me _____.”
+
+  Is this correct? You can proceed to checkout or go back to plan selection if something 
+  is off. Subscription discount codes can also be redeemed at the checkout.
+
+  $_____/month
+
+  Checkout
+  <!-- End modal -->
+
+  Home
+  About us
+  Create your plan
