@@ -5,6 +5,10 @@ import StyledLink from '../styledElements/Link.styled';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../context';
 
+const StyledFooter = styled.footer`
+  margin: 0 2rem;
+`;
+
 const Container = styled.div`
   ${maxWidthLg}
   ${flexBetween}
@@ -45,7 +49,7 @@ const Footer = () => {
   const { links, socials } = useGlobalContext();
 
   return (
-    <footer>
+    <StyledFooter>
       <Container>
         <div>
           <Link to='/'>
@@ -71,7 +75,7 @@ const Footer = () => {
           ))}
         </ul>
       </Container>
-    </footer>
+    </StyledFooter>
   );
 };
 

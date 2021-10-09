@@ -12,6 +12,10 @@ import { FaFacebookSquare, FaTwitter, FaInstagram } from 'react-icons/fa';
 import sectionBgOne from './assets/about/desktop/image-hero-whitecup.jpg';
 import sectionBgTwo from './assets/plan/desktop/image-hero-blackcup.jpg';
 
+import headquarterIconOne from './assets/about/desktop/illustration-uk.svg';
+import headquarterIconTwo from './assets/about/desktop/illustration-canada.svg';
+import headquarterIconThree from './assets/about/desktop/illustration-australia.svg';
+
 export const linksData = [
   {
     id: 1,
@@ -144,5 +148,35 @@ export const sectionHerosData = [
     title: 'Create a plan',
     description:
       'Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.',
+  },
+];
+
+export const headquartersData = [
+  {
+    id: 1,
+    icon: headquarterIconOne,
+    headquarter: 'United Kingdom',
+    address: '68 Asfordby Rd',
+    city: 'Alcaston',
+    province: 'SY6 1YA',
+    phone: '+44 1241 918425',
+  },
+  {
+    id: 2,
+    icon: headquarterIconTwo,
+    headquarter: 'Canada',
+    address: '1528 Eglinton Avenue',
+    city: 'Toronto',
+    province: 'Ontario M4P 1A6',
+    phone: '+1 416 485 2997',
+  },
+  {
+    id: 3,
+    icon: headquarterIconThree,
+    headquarter: 'Australia',
+    address: '36 Swanston Street',
+    city: 'Kewell',
+    province: 'Victoria',
+    phone: '+61 4 9928 3629',
   },
 ];

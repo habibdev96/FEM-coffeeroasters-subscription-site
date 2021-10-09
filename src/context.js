@@ -6,6 +6,7 @@ import {
   stepsData,
   socialsData,
   sectionHerosData,
+  headquartersData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -17,6 +18,7 @@ export const AppProvider = ({ children }) => {
   const [steps, setSteps] = useState(stepsData);
   const [socials, setSocials] = useState(socialsData);
   const [sectionHeros, setSectionHeros] = useState(sectionHerosData);
+  const [headquarters, setHeadquarters] = useState(headquartersData);
 
   const scrollToTop = () => window.scrollTo(0);
 
@@ -30,6 +32,7 @@ export const AppProvider = ({ children }) => {
         steps,
         socials,
         sectionHeros,
+        headquarters,
       }}
     >
       {children}
