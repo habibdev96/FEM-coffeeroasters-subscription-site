@@ -5,6 +5,7 @@ import {
   featuresData,
   stepsData,
   socialsData,
+  sectionHerosData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -15,12 +16,21 @@ export const AppProvider = ({ children }) => {
   const [features, setFeatures] = useState(featuresData);
   const [steps, setSteps] = useState(stepsData);
   const [socials, setSocials] = useState(socialsData);
+  const [sectionHeros, setSectionHeros] = useState(sectionHerosData);
 
   const scrollToTop = () => window.scrollTo(0);
 
   return (
     <AppContext.Provider
-      value={{ scrollToTop, links, collections, features, steps, socials }}
+      value={{
+        scrollToTop,
+        links,
+        collections,
+        features,
+        steps,
+        socials,
+        sectionHeros,
+      }}
     >
       {children}
     </AppContext.Provider>

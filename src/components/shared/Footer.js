@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import logo from '../../assets/shared/desktop/logolight.svg';
 import { maxWidthLg, flexBetween, flexAlign } from '../../abstracts/Mixins';
 import StyledLink from '../styledElements/Link.styled';
+import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
@@ -9,6 +10,7 @@ const Container = styled.div`
   ${flexBetween}
   padding: 5rem;
   background-color: var(--darkGrayBlue);
+  border-radius: var(--mainRadius);
 
   .logo {
     width: 30rem;
@@ -46,11 +48,13 @@ const Footer = () => {
     <footer>
       <Container>
         <div>
-          <img src={logo} alt='' className='logo' />
+          <Link to='/'>
+            <img src={logo} alt='' className='logo' />
+          </Link>
           <ul className='links'>
             {links.map((link) => (
               <li key={link.id}>
-                <StyledLink path={link.path} footer>
+                <StyledLink to={link.path} footer>
                   {link.text}
                 </StyledLink>
               </li>
