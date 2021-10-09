@@ -54,7 +54,7 @@ const Footer = () => {
           <ul className='links'>
             {links.map((link) => (
               <li key={link.id}>
-                <StyledLink to={link.path} footer>
+                <StyledLink to={link.path} footer={+true}>
                   {link.text}
                 </StyledLink>
               </li>
