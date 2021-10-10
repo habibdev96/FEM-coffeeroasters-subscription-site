@@ -19,7 +19,7 @@ const Container = styled.div`
 `;
 
 const Steps = () => {
-  const { steps } = useGlobalContext();
+  const { steps, scrollToTop } = useGlobalContext();
 
   return (
     <section>
@@ -30,7 +30,7 @@ const Steps = () => {
             <Step key={step.id} {...step} />
           ))}
         </div>
-        <Button to='/Plan' primary={+true}>
+        <Button to='/Plan' primary={+true} onClick={scrollToTop}>
           Create your plan
         </Button>
       </Container>

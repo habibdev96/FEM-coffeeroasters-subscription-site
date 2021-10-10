@@ -4,6 +4,7 @@ import Paragraph from '../styledElements/Paragraphs.styled';
 import Button from '../styledElements/Buttons.styled';
 import { maxWidthLg } from '../../abstracts/Mixins';
 import bg from '../../assets/home/desktop/image-hero-coffeepress.jpg';
+import { useGlobalContext } from '../../context';
 
 const StyledHeader = styled.header`
   margin: 0 2rem;
@@ -19,6 +20,8 @@ const Container = styled.div`
 `;
 
 const HomeHero = () => {
+  const { scrollToTop } = useGlobalContext();
+
   return (
     <StyledHeader>
       <Container>
@@ -29,7 +32,7 @@ const HomeHero = () => {
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </Paragraph>
-          <Button to='/Plan' primary={+true}>
+          <Button to='/Plan' primary={+true} onClick={scrollToTop}>
             Create your plan
           </Button>
         </div>

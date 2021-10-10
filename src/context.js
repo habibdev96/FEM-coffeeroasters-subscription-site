@@ -20,7 +20,7 @@ export const AppProvider = ({ children }) => {
   const [sectionHeros, setSectionHeros] = useState(sectionHerosData);
   const [headquarters, setHeadquarters] = useState(headquartersData);
 
-  const scrollToTop = () => window.scrollTo(0);
+  const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
     <AppContext.Provider

@@ -34,5 +34,6 @@ export const SubHeading = styled.h3`
 export const CardHeading = styled.h4`
   ${headingStyles}
   font-size: 3.2rem;
+  color: ${({ light }) => light && 'var(--lightCream)'};
   color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
 `;

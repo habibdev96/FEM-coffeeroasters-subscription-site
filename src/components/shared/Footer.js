@@ -46,7 +46,7 @@ const Container = styled.div`
 `;
 
 const Footer = () => {
-  const { links, socials } = useGlobalContext();
+  const { links, socials, scrollToTop } = useGlobalContext();
 
   return (
     <StyledFooter>
@@ -58,7 +58,7 @@ const Footer = () => {
           <ul className='links'>
             {links.map((link) => (
               <li key={link.id}>
-                <StyledLink to={link.path} footer={+true}>
+                <StyledLink to={link.path} footer={+true} onClick={scrollToTop}>
                   {link.text}
                 </StyledLink>
               </li>
