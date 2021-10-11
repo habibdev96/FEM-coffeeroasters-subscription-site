@@ -11,6 +11,7 @@ export const SectionHeading = styled.h2`
   ${headingStyles}
   font-size: 4rem;
   color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
+  color: ${({ gray }) => gray && 'var(--gray)'};
   color: ${({ light }) => light && 'var(--lightCream)'};
 `;
 

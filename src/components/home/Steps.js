@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 import { SubHeading } from '../styledElements/Headings.styled';
 import Step from './Step';
-import Button from '../styledElements/Buttons.styled';
+import { Button } from '../styledElements/Buttons.styled';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`

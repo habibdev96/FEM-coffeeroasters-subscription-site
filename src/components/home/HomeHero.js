@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { HeroHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
-import Button from '../styledElements/Buttons.styled';
+import { Button } from '../styledElements/Buttons.styled';
 import { maxWidthLg } from '../../abstracts/Mixins';
 import bg from '../../assets/home/desktop/image-hero-coffeepress.jpg';
 import { useGlobalContext } from '../../context';

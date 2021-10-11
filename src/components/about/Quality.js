@@ -14,7 +14,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  padding: 5rem;
+  padding: 2rem 5rem;
   gap: var(--gap);
   border-radius: var(--mainRadius);
   background-color: var(--darkGrayBlue);

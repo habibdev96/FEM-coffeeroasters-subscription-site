@@ -1,5 +1,6 @@
 import SectionHero from '../components/shared/SectionHero';
 import StepsDark from '../components/plan/StepsDark';
+import Subscriptions from '../components/plan/Subscriptions';
 import { useGlobalContext } from '../context';
 
 const PlanPage = () => {
@@ -14,6 +15,7 @@ const PlanPage = () => {
       />
       <main>
         <StepsDark />
+        <Subscriptions />
       </main>
     </>
   );
