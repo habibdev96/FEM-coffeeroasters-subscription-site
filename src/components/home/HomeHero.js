@@ -25,7 +25,7 @@ const HomeHero = () => {
   return (
     <StyledHeader>
       <Container>
-        <div>
+        <div data-aos='fade-in'>
           <HeroHeading>Great coffee made simple.</HeroHeading>
           <Paragraph light>
             Start your mornings with the world’s best coffees. Try our expertly

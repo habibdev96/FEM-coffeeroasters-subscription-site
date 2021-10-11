@@ -23,7 +23,7 @@ const Collections = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         <GradientHeading>our collection</GradientHeading>
         <div className='collections'>
           {collections.map((collection) => (

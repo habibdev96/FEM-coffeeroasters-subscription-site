@@ -22,7 +22,7 @@ const SectionHero = ({ title, description, bg }) => {
       <Container
         style={{ background: `url(${bg}) center center/cover no-repeat` }}
       >
-        <div>
+        <div data-aos='fade-in'>
           <SectionHeading light>{title}</SectionHeading>
           <Paragraph light>{description}</Paragraph>
         </div>

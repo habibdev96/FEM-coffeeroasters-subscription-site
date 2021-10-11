@@ -21,8 +21,8 @@ const Commitment = () => {
   return (
     <section>
       <Container>
-        <img src={showcase} alt='' className='showcase' />
-        <div>
+        <img src={showcase} alt='' className='showcase' data-aos='fade-in' />
+        <div data-aos='fade-in' data-aos-delay='200'>
           <SectionHeading dark>Our commitment</SectionHeading>
           <Paragraph>
             We’re built on a simple mission and a commitment to doing good along

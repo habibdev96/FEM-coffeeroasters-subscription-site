@@ -23,7 +23,7 @@ const Steps = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in'>
         <SubHeading gray>How it works</SubHeading>
         <div className='steps'>
           {steps.map((step) => (

@@ -28,7 +28,7 @@ const Container = styled.div`
 const Quality = () => {
   return (
     <StyledSection>
-      <Container>
+      <Container data-aos='fade-in'>
         <div>
           <SectionHeading light>Uncompromising quality</SectionHeading>
           <Paragraph light>

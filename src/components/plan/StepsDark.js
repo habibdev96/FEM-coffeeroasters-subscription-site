@@ -24,7 +24,7 @@ const StepsDark = () => {
 
   return (
     <StyledSection>
-      <Container>
+      <Container data-aos='fade-in'>
         {steps.map((step) => (
           <StepDark key={step.id} {...step} />
         ))}

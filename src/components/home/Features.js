@@ -37,7 +37,7 @@ const Features = () => {
 
   return (
     <StyledSection>
-      <Container>
+      <Container data-aos='fade-in'>
         <SectionHeading light>Why choose us?</SectionHeading>
         <Paragraph light className='paragraph'>
           A large part of our role is choosing which particular coffees will be

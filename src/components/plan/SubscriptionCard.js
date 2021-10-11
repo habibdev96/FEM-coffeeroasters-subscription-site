@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import { headingStyles, textStyles } from '../../abstracts/Mixins';
 
@@ -7,6 +8,20 @@ const StyledArticle = styled.article`
   background-color: var(--tan);
   border-radius: var(--mainRadius);
   transition: var(--mainTransition);
+
+  &.selected {
+    background-color: var(--darkCyan);
+
+    .title,
+    .description {
+      color: var(--lightCream);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--darkCyan);
+    }
+  }
 
   &:hover,
   &:focus {
@@ -26,8 +41,17 @@ const StyledArticle = styled.article`
 `;
 
 const SubscriptionCard = ({ optionTitle, optionDescription }) => {
+  const [isCardSelected, setIsCardSelected] = useState(false);
+
+  const handleSelect = () => {
+    setIsCardSelected(!isCardSelected);
+  };
+
   return (
-    <StyledArticle>
+    <StyledArticle
+      onClick={handleSelect}
+      className={`${isCardSelected && 'selected'}`}
+    >
       <h4 className='title'>{optionTitle}</h4>
       <p className='description'>{optionDescription}</p>
     </StyledArticle>

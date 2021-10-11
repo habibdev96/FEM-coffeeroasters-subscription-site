@@ -22,7 +22,7 @@ const Headquarters = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in'>
         <SubHeading gray>Our headquarters</SubHeading>
         <div className='headquarters'>
           {headquarters.map((hq) => (

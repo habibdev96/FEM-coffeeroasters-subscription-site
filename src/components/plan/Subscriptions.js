@@ -31,14 +31,15 @@ const Container = styled.div`
     flex-direction: column;
   }
 
-  .step {
+  .step-btn {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     background: transparent;
     outline: 0;
     border: 0;
+    opacity: 0.8;
   }
 
   .number {
@@ -51,12 +52,11 @@ const Container = styled.div`
     ${headingStyles}
     font-size: 2.4rem;
     color: var(--gray);
-    opacity: 0.8;
   }
 
   .summary {
-    margin-bottom: 2rem;
-    padding: 2rem 5rem;
+    margin-bottom: 3rem;
+    padding: 3rem 5rem;
     background-color: var(--darkGrayBlue);
     border-radius: var(--mainRadius);
 
@@ -86,17 +86,17 @@ const Subscriptions = () => {
   return (
     <section>
       <Container>
-        <div>
+        <div data-aos='fade-in'>
           <div className='steps'>
             {subscriptions.map((sub) => (
-              <button key={sub.id} className='step'>
+              <button key={sub.id} className='step-btn'>
                 <span className='number'>{sub.number}</span>
                 <span className='step'>{sub.step}</span>
               </button>
             ))}
           </div>
         </div>
-        <div>
+        <div data-aos='fade-in' data-aos-delay='200'>
           {subscriptions.map((sub) => (
             <Subscription key={sub.id} {...sub} />
           ))}
