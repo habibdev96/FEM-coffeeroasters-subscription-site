@@ -11,6 +11,7 @@ site: https://fem-coffeeroasters-subscription-site-challenge.netlify.app
 - mobile menu & toggle
 - responsive design
 - animated content on scroll
+- accordion
 
 #### Technologies used
 - react
