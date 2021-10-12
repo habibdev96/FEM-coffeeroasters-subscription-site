@@ -42,7 +42,7 @@ const Container = styled.div`
 `;
 
 const Navbar = () => {
-  const { links } = useGlobalContext();
+  const { links, scrollToTop } = useGlobalContext();
 
   return (
     <StyledNav>
@@ -53,7 +53,9 @@ const Navbar = () => {
         <ul className='links'>
           {links.map((link) => (
             <li key={link.id}>
-              <StyledLink to={link.path}>{link.text}</StyledLink>
+              <StyledLink to={link.path} onClick={scrollToTop}>
+                {link.text}
+              </StyledLink>
             </li>
           ))}
         </ul>
