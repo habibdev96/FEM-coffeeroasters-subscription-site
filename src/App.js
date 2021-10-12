@@ -10,7 +10,7 @@ import MobileMenu from './components/shared/MobileMenu';
 import Footer from './components/shared/Footer';
 import Tag from './components/shared/Tag';
 
-// TODO: hamburger menu & toggle | subscription functionality
+// TODO: subscription functionality
 
 const App = () => {
   AOS.init({ offset: 10, duration: 1000, once: true });
