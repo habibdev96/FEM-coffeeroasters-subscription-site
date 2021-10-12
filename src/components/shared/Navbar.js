@@ -8,6 +8,7 @@ import {
   flexBetween,
   flexAlign,
 } from '../../abstracts/Mixins';
+import MobileMenuToggler from './MobileMenuToggler';
 import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
@@ -53,6 +54,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <MobileMenuToggler />
       </Container>
     </nav>
   );

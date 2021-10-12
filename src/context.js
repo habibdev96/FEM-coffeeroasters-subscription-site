@@ -21,6 +21,7 @@ export const AppProvider = ({ children }) => {
   const [sectionHeros, setSectionHeros] = useState(sectionHerosData);
   const [headquarters, setHeadquarters] = useState(headquartersData);
   const [subscriptions, setSubscriptions] = useState(subscriptionData);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -36,6 +37,8 @@ export const AppProvider = ({ children }) => {
         sectionHeros,
         headquarters,
         subscriptions,
+        isSidebarOpen,
+        setIsSidebarOpen,
       }}
     >
       {children}

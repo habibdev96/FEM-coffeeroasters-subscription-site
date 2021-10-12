@@ -9,6 +9,8 @@ import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
 import Tag from './components/shared/Tag';
 
+// TODO: hamburger menu & toggle | subscription functionality
+
 const App = () => {
   AOS.init({ offset: 10, duration: 1000, once: true });
 
