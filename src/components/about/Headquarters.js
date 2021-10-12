@@ -2,11 +2,16 @@ import styled from 'styled-components';
 import { SubHeading } from '../styledElements/Headings.styled';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 import Headquarter from './Headquarter';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
   ${maxWidthLg}
   ${sectionSpacingMd}
+
+  ${Responsive.md`
+    text-align: center;
+  `}
 
   .headquarters {
     margin-top: 10rem;

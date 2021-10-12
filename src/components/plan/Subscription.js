@@ -4,6 +4,7 @@ import SubscriptionCard from './SubscriptionCard';
 import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri';
 import { SectionHeading } from '../styledElements/Headings.styled';
 import { flexBetween } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledArticle = styled.article`
   margin: 2rem 0;
@@ -20,7 +21,8 @@ const StyledArticle = styled.article`
 
   .options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     margin: 5rem 0;
   }

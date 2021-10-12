@@ -4,6 +4,7 @@ import Paragraph from '../styledElements/Paragraphs.styled';
 import { Button } from '../styledElements/Buttons.styled';
 import { maxWidthLg } from '../../abstracts/Mixins';
 import bg from '../../assets/home/desktop/image-hero-coffeepress.jpg';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const StyledHeader = styled.header`
@@ -17,6 +18,17 @@ const Container = styled.div`
   padding: 10rem;
   background: url(${bg}) center center/cover no-repeat;
   border-radius: var(--mainRadius);
+
+  ${Responsive.xl`
+    padding: 10rem 5rem;
+    grid-template-columns: 2fr 1fr; 
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10rem 2rem;
+  `}
 `;
 
 const HomeHero = () => {

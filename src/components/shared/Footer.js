@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 import logo from '../../assets/shared/desktop/logolight.svg';
-import { maxWidthLg, flexBetween, flexAlign } from '../../abstracts/Mixins';
+import {
+  maxWidthLg,
+  flexBetween,
+  flexAlign,
+  flexCenter,
+} from '../../abstracts/Mixins';
 import StyledLink from '../styledElements/Link.styled';
 import { Link } from 'react-router-dom';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const StyledFooter = styled.footer`
@@ -12,20 +18,46 @@ const StyledFooter = styled.footer`
 const Container = styled.div`
   ${maxWidthLg}
   ${flexBetween}
+  flex-wrap: wrap;
   padding: 5rem;
   background-color: var(--darkGrayBlue);
   border-radius: var(--mainRadius);
 
+  ${Responsive.sm`
+    ${flexCenter}
+  `}
+
+  .logo-container {
+    ${Responsive.sm`
+      margin: 0 auto;
+    `}
+  }
+
   .logo {
     width: 30rem;
+
+    ${Responsive.sm`
+      width: 20rem;
+    `}
+
+    ${Responsive.xs`
+      width: 15rem;
+    `}
   }
 
   & > div {
     ${flexAlign}
+    flex-wrap: wrap;
   }
 
   .links {
     ${flexAlign}
+
+    ${Responsive.sm`
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 auto;
+    `}
   }
 
   .socials {
@@ -52,7 +84,7 @@ const Footer = () => {
     <StyledFooter>
       <Container>
         <div>
-          <Link to='/'>
+          <Link to='/' className='logo-container'>
             <img src={logo} alt='' className='logo' />
           </Link>
           <ul className='links'>

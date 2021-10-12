@@ -3,6 +3,7 @@ import { SectionHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import showcase from '../../assets/about/desktop/image-quality.jpg';
 import { maxWidthLg, sectionSpacingSm } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledSection = styled.section`
   margin: 0 2rem;
@@ -19,9 +20,25 @@ const Container = styled.div`
   border-radius: var(--mainRadius);
   background-color: var(--darkGrayBlue);
 
+  ${Responsive.lg`
+    padding: 5rem;
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  `}
+
   .showcase {
     border-radius: var(--mainRadius);
     transform: translateY(-10rem);
+
+    ${Responsive.lg`
+      transform: translateY(0);
+    `}
+
+    ${Responsive.md`
+      order: -1;
+    `}
   }
 `;
 

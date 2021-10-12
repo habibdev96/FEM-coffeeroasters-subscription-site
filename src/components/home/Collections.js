@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { sectionSpacingMd, maxWidthLg } from '../../abstracts/Mixins';
 import { GradientHeading } from '../styledElements/Headings.styled';
 import Collection from './Collection';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
@@ -15,6 +16,10 @@ const Container = styled.div`
     align-items: center;
     gap: var(--gap);
     transform: translateY(-15%);
+
+    ${Responsive.lg`
+      transform: translateY(0);   
+    `}
   }
 `;
 

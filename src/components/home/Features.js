@@ -3,6 +3,7 @@ import Feature from './Feature';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 import { SectionHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const StyledSection = styled.section`
@@ -20,6 +21,10 @@ const Container = styled.div`
   .paragraph {
     width: 50%;
     margin: 0 auto;
+
+    ${Responsive.lg`
+      width: 100%;
+    `}
   }
 
   .features {
@@ -29,6 +34,11 @@ const Container = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     gap: var(--gap);
+
+    ${Responsive.sm`
+      margin: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    `}
   }
 `;
 

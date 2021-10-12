@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import Subscription from './Subscription';
 import {
   maxWidthLg,
+  sectionSpacingSm,
   sectionSpacingMd,
   headingStyles,
   textStyles,
 } from '../../abstracts/Mixins';
 import { SubmitButton } from '../styledElements/Buttons.styled';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
@@ -16,6 +18,14 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   gap: var(--gap);
+
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+  `}
+
+  ${Responsive.sm`
+    ${sectionSpacingSm}
+  `}
 
   // for position sticky
   & > div {
@@ -40,6 +50,10 @@ const Container = styled.div`
     outline: 0;
     border: 0;
     opacity: 0.8;
+
+    ${Responsive.lg`
+      display: none;
+    `}
   }
 
   .number {

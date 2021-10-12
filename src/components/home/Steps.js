@@ -3,11 +3,16 @@ import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 import { SubHeading } from '../styledElements/Headings.styled';
 import Step from './Step';
 import { Button } from '../styledElements/Buttons.styled';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
   ${maxWidthLg}
   ${sectionSpacingMd}
+
+  ${Responsive.md`
+    text-align: center;
+  `}
 
   .steps {
     margin: 10rem 0;

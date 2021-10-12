@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 import { headingStyles } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 export const HeroHeading = styled.h1`
   ${headingStyles}
   font-size: 7.2rem;
   color: var(--lightCream);
+
+  ${Responsive.md`
+    font-size: 4rem;
+  `}
 `;
 
 export const SectionHeading = styled.h2`
@@ -13,6 +18,10 @@ export const SectionHeading = styled.h2`
   color: ${({ dark }) => dark && 'var(--darkGrayBlue)'};
   color: ${({ gray }) => gray && 'var(--gray)'};
   color: ${({ light }) => light && 'var(--lightCream)'};
+
+  ${Responsive.sm`
+    font-size: 2.4rem;
+  `}
 `;
 
 export const GradientHeading = styled.h2`
@@ -22,6 +31,14 @@ export const GradientHeading = styled.h2`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ${Responsive.lg`
+    font-size: 8rem;
+  `}
+
+  ${Responsive.sm`
+    font-size: 5rem;
+  `}
 `;
 
 export const SubHeading = styled.h3`

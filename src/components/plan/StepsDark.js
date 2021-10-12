@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import StepDark from './StepDark';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const StyledSection = styled.section`
@@ -17,6 +18,15 @@ const Container = styled.div`
   gap: var(--gap);
   background-color: var(--darkGrayBlue);
   border-radius: var(--mainRadius);
+
+  ${Responsive.md`
+    text-align: center;
+  `}
+
+  ${Responsive.sm`
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  `}
 `;
 
 const StepsDark = () => {

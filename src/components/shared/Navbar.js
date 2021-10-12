@@ -8,6 +8,7 @@ import {
   flexBetween,
   flexAlign,
 } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
@@ -17,10 +18,22 @@ const Container = styled.div`
 
   .logo {
     width: 30rem;
+
+    ${Responsive.sm`
+      width: 20rem;
+    `}
+
+    ${Responsive.xs`
+      width: 15rem;
+    `}
   }
 
   .links {
     ${flexAlign}
+
+    ${Responsive.md`
+      display: none;
+    `}
   }
 `;
 

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { CardHeading } from '../styledElements/Headings.styled';
 import Paragraph from '../styledElements/Paragraphs.styled';
 import { headingStyles } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledArticle = styled.article`
   position: relative;
@@ -16,11 +17,19 @@ const StyledArticle = styled.article`
     height: 0.2rem;
     width: 130%;
     background-color: var(--paleOrange);
+
+    ${Responsive.lg`
+      display: none;
+    `}
   }
 
   &:nth-child(3) {
     &::before {
       width: 100%;
+
+      ${Responsive.lg`
+        display: none;
+      `}
     }
   }
 
@@ -34,6 +43,10 @@ const StyledArticle = styled.article`
     position: relative;
     border: 0.2rem solid var(--darkCyan);
     background-color: var(--darkGrayBlue);
+
+    ${Responsive.md`
+       margin: 0 auto 5rem auto;
+    `}
   }
 
   .number {
@@ -41,6 +54,10 @@ const StyledArticle = styled.article`
     font-size: 7.2rem;
     margin-bottom: 2rem;
     color: var(--paleOrange);
+
+    ${Responsive.sm`
+      font-size: 5rem; 
+    `}
   }
 `;
 
