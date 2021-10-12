@@ -2,7 +2,10 @@
 
 3 page website challenge for frontend mentor.
 
-todo: finish subscription page functionality
+site: https://fem-coffeeroasters-subscription-site-challenge.netlify.app
+
+#### TODO
+- finish subscription page functionality
 
 #### Features
 - mobile menu & toggle
@@ -17,4 +20,7 @@ todo: finish subscription page functionality
 - react-router-dom
 - aos.js
 - react-icons
+
+#### State Management
+- context api
 
