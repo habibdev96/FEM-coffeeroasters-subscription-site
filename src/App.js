@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import PlanPage from './pages/PlanPage';
 import Navbar from './components/shared/Navbar';
+import MobileMenu from './components/shared/MobileMenu';
 import Footer from './components/shared/Footer';
 import Tag from './components/shared/Tag';
 
@@ -19,6 +20,7 @@ const App = () => {
       <Globals />
       <Router>
         <Navbar />
+        <MobileMenu />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/About' component={About} />

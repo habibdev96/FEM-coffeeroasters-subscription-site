@@ -16,7 +16,7 @@ const Toggler = styled.button`
 
   .icon {
     color: var(--darkGrayBlue);
-    font-size: var(--lg);
+    font-size: var(--md);
   }
 `;
 

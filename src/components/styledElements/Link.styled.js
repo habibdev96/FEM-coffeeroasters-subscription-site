@@ -23,6 +23,12 @@ const StyledLink = styled(Link)`
         color: var(--lightCream);
       }
     `}
+
+  ${({ mobile }) =>
+    mobile &&
+    css`
+      font-size: 2rem;
+    `}
 `;
 
 export default StyledLink;

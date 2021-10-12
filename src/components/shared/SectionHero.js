@@ -14,6 +14,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10rem;
+  margin-top: 10rem;
   border-radius: var(--mainRadius);
 
   ${Responsive.xl`
